@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <title>My Blog</title>
   <meta charset="utf-8">
@@ -8,217 +9,249 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-    .row.content {height: 1500px}
     
+    .row.content {
+      height: 1500px
+    }
     /* Set gray background color and 100% height */
+    
     .sidenav {
       background-color: #f1f1f1;
       height: 100%;
     }
-    
     /* Set black background color, white text and some padding */
+    
     footer {
       background-color: #555;
       color: white;
       padding: 15px;
     }
-    
     /* On small screens, set height to 'auto' for sidenav and grid */
+    
     @media screen and (max-width: 767px) {
       .sidenav {
         height: auto;
         padding: 15px;
       }
-      .row.content {height: auto;} 
+      .row.content {
+        height: auto;
+      }
     }
   </style>
   <style>
-  body {
-      position: relative; 
-  }
-  #section1 {padding-top:50px;height:1550px;color: #fff; background-color: #1E88E5;}
-  #section2 {padding-top:50px;height:900px;color: #fff; background-color: #673ab7;}
-  #section4 {padding-top:50px;height:3100px;color: #fff; background-color: #00bcd4;}
+    body {
+      position: relative;
+    }
+    
+    #section1 {
+      padding-top: 50px;
+      height: 1550px;
+      color: #fff;
+      background-color: #1E88E5;
+    }
+    
+    #section2 {
+      padding-top: 50px;
+      height: 900px;
+      color: #fff;
+      background-color: #673ab7;
+    }
+    
+    #section4 {
+      padding-top: 50px;
+      height: 3100px;
+      color: #fff;
+      background-color:hotpink;
+    }
   </style>
 </head>
-<body>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<body>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Home</a>
-    </div>
-    <div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="#section1">Bootstrap</a></li>
-          <li><a href="#section2">Friends</a></li>
-          <li><a href="#section4">My Gallery</a></li>
+          <a class="navbar-brand" href="#">Home</a>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#section1">Bootstrap</a></li>
+              <li><a href="#section2">Friends</a></li>
+              <li><a href="#section4">My Gallery</a></li>
             </ul>
-          </li>
-        </ul>
+            </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</nav>    
+    </nav>
 
-<div id="section1" class="container-fluid">
-  <div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav">
-      <h4><font color = "blue">Toey's Blog</h4>
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Bootstrap</a></li>
-        <li><a href="#section2">Friends</a></li>
-        <li><a href="#section3">My Gallery</a></li>
-      </ul><br>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search Blog..">
-        <span class="input-group-btn">
+    <div id="section1" class="container-fluid">
+      <div class="container-fluid">
+        <div class="row content">
+          <div class="col-sm-3 sidenav">
+            <h4>
+              <font color="blue">Toey's Blog</font></h4>
+            <ul class="nav nav-pills nav-stacked">
+              <li class="active"><a href="#section1">Bootstrap</a></li>
+              <li><a href="#section2">Friends</a></li>
+              <li><a href="#section3">My Gallery</a></li>
+            </ul><br>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search Blog..">
+              <span class="input-group-btn">
           <button class="btn btn-default" type="button">
             <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
-      </div>
-    </div>
-
-    <div class="col-sm-9">
-      <h4><small>RECENT POSTS</small></h4>
-      <hr>
-      <h2>การใช้งาน Grid ใน Bootstrap </h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by Rattanachart Jamnienkan, Feb 7, 2017.</h5>
-      <h5><span class="label label-danger">Bootstrap</span> <span class="label label-primary">Grid</span></h5><br>
-      <p>   ในการแสดงผลของ web นั้นในอดีตแสดงให้แก่หน้าจอน้อยประเภท ส่วนใหญ่คือหน้าจอ pc หรือไม่ก็ notebook ไม่ได้หลากหลายเท่าปัจจุบัน ในปัจจุบันมีขนาดหน้าจอเพิ่มขึ้น ไม่ว่าจะเป็น tablet หรือ smart phone ทำให้ web ที่ได้ทำการพัฒนาขึ้นต้องรองรับในความหลากหลายนี้ให้ได้ Bootstrap ก็เช่นกัน เนื่องจาก Bootstrap เป็นเครื่องมือในการสร้าง web แบบ responsive ด้วย ทำให้ขาดคุณสมบัติเกี่ยวกับการแสดงผลในหน้าจอที่มีขนาดที่หลากหลายไปไม่ได้ และต้องรองรับความแตกต่างของหน้าจอให้ได้
-
-Bootstrap ได้ใช้หลักการซอยย่อยหน้าจอเป็นส่วนๆ โดยแต่ละส่วนนั้นเป็นแนวตั้ง หรือที่เรียกว่า คอลัมน์ โดยมี 12 กล่อง ขนาดเท่าๆกัน ดังรูป.</p>
-      <br><br>
-      <img src="bootstrap.png">
-      
-      <h4><small>RECENT POSTS</small></h4>
-      <hr>
-      <h2>การใช้งาน Bootstrap Forms</h2>
-      <h5><span class="glyphicon glyphicon-time"></span> Post by Rattanachart Jamnienkan, Feb 7, 2017.</h5>
-      <h5><span class="label label-danger">Bootstrap</span> <span class="label label-primary">Form</span></h5><br>
-      <p>การใช้งาน Form ของ Bootstrap ไม่ได้มีอะไรซับซ้อนมากมายครับ โดยเราแค่เรียกใช้ class “form-control” ในtextbox combo-box หรือ textarea แค่นี้ input ต่างๆ ก็แสดงผลในรูปแบบของ bootstrap ครับ โดย input ต่างๆ ที่มีการเรียกใช้ class “form-control” จะมีลักษณะที่โค้งมน และมีความกว้าง 100% ใน tag ที่ input นี้อยู่ครับ .</p>
-      <hr>
-
-      <h4>Leave a Comment:</h4>
-      <form role="form">
-        <div class="form-group">
-          <textarea class="form-control" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-success">Submit</button>
-      </form>
-      <br><br>
-      
-      <p><span class="badge">2</span> Comments:</p><br>
-      
-      <div class="row">
-        <div class="col-sm-2 text-center">
-          <img src="g.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-        </div>
-        <div class="col-sm-10">
-          <h4>Somkid Homhual <small>Feb 8, 2017, 8:31 PM</small></h4>
-          <p>ข้อมูลมีประโยชน์มากเลยครับ.</p>
-          <br>
-        </div>
-        <div class="col-sm-2 text-center">
-          <img src="t.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-        </div>
-        <div class="col-sm-10">
-          <h4>Rattanachart Jamnienkan <small>Feb 8, 2017, 8:34 PM</small></h4>
-          <p>ได้ยินแบบนั้นผมก็ดีใจครับที่ข้อมูลของผมมีประโยชน์.</p>
-          <br>
-          <p><span class="badge">1</span> Comment:</p><br>
-          <div class="row">
-            <div class="col-sm-2 text-center">
-              <img src="r.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+              </button>
+              </span>
             </div>
-            <div class="col-xs-10">
-              <h4>Rutthapon Lertprasertwate <small>Feb 8, 2017, 8:37 PM</small></h4>
-              <p>WOW!</p>
-              <br>
+          </div>
+
+          <div class="col-sm-9">
+            <h4><small>RECENT POSTS</small></h4>
+            <hr>
+            <h2>การใช้งาน Grid ใน Bootstrap </h2>
+            <h5><span class="glyphicon glyphicon-time"></span> Post by Rattanachart Jamnienkan, Feb 7, 2017.</h5>
+            <h5><span class="label label-danger">Bootstrap</span> <span class="label label-primary">Grid</span></h5><br>
+            <p> ในการแสดงผลของ web นั้นในอดีตแสดงให้แก่หน้าจอน้อยประเภท ส่วนใหญ่คือหน้าจอ pc หรือไม่ก็ notebook ไม่ได้หลากหลายเท่าปัจจุบัน
+              ในปัจจุบันมีขนาดหน้าจอเพิ่มขึ้น ไม่ว่าจะเป็น tablet หรือ smart phone ทำให้ web ที่ได้ทำการพัฒนาขึ้นต้องรองรับในความหลากหลายนี้ให้ได้
+              Bootstrap ก็เช่นกัน เนื่องจาก Bootstrap เป็นเครื่องมือในการสร้าง web แบบ responsive ด้วย ทำให้ขาดคุณสมบัติเกี่ยวกับการแสดงผลในหน้าจอที่มีขนาดที่หลากหลายไปไม่ได้
+              และต้องรองรับความแตกต่างของหน้าจอให้ได้ Bootstrap ได้ใช้หลักการซอยย่อยหน้าจอเป็นส่วนๆ โดยแต่ละส่วนนั้นเป็นแนวตั้ง
+              หรือที่เรียกว่า คอลัมน์ โดยมี 12 กล่อง ขนาดเท่าๆกัน ดังรูป.</p>
+            <br><br>
+            <img src="bootstrap.png">
+
+            <h4><small>RECENT POSTS</small></h4>
+            <hr>
+            <h2>การใช้งาน Bootstrap Forms</h2>
+            <h5><span class="glyphicon glyphicon-time"></span> Post by Rattanachart Jamnienkan, Feb 7, 2017.</h5>
+            <h5><span class="label label-danger">Bootstrap</span> <span class="label label-primary">Form</span></h5><br>
+            <p>การใช้งาน Form ของ Bootstrap ไม่ได้มีอะไรซับซ้อนมากมายครับ โดยเราแค่เรียกใช้ class “form-control” ในtextbox combo-box
+              หรือ textarea แค่นี้ input ต่างๆ ก็แสดงผลในรูปแบบของ bootstrap ครับ โดย input ต่างๆ ที่มีการเรียกใช้ class
+              “form-control” จะมีลักษณะที่โค้งมน และมีความกว้าง 100% ใน tag ที่ input นี้อยู่ครับ .</p>
+            <hr>
+
+            <h4>Leave a Comment:</h4>
+            <form role="form">
+              <div class="form-group">
+                <textarea class="form-control" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+            <br><br>
+
+            <p><span class="badge">2</span> Comments:</p><br>
+
+            <div class="row">
+              <div class="col-sm-2 text-center">
+                <img src="g.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+              </div>
+              <div class="col-sm-10">
+                <h4>Somkid Homhual <small>Feb 8, 2017, 8:31 PM</small></h4>
+                <p>ข้อมูลมีประโยชน์มากเลยครับ.</p>
+                <br>
+              </div>
+              <div class="col-sm-2 text-center">
+                <img src="t.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+              </div>
+              <div class="col-sm-10">
+                <h4>Rattanachart Jamnienkan <small>Feb 8, 2017, 8:34 PM</small></h4>
+                <p>ได้ยินแบบนั้นผมก็ดีใจครับที่ข้อมูลของผมมีประโยชน์.</p>
+                <br>
+                <p><span class="badge">1</span> Comment:</p><br>
+                <div class="row">
+                  <div class="col-sm-2 text-center">
+                    <img src="r.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                  </div>
+                  <div class="col-xs-10">
+                    <h4>Rutthapon Lertprasertwate <small>Feb 8, 2017, 8:37 PM</small></h4>
+                    <p>WOW!</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
-<div id="section2" class="container-fluid">
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme The Band</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  .container {
-      padding: 40px 80px;
-  }
-  </style>
-</head>
-<body>
+    <div id="section2" class="container-fluid">
+      <!DOCTYPE html>
+      <html lang="en">
 
-<div class="container text-center">
-  <h3>THE GANG</h3>
-  <br>
-  <p><em>I love my friends!</em></p>
-  <br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p><strong>GAME</strong></p><br>
-      <a href="https://www.facebook.com/somkid.23071996?fref=ufi"><img src="g.jpg" alt="GAME" width="255" height="255">
-    </div>
-    <div class="col-sm-4">
-      <p><strong>RUTT</strong></p><br>
-      <a href="https://www.facebook.com/rutthapon.lertprasertwet?fref=ufi"><img src="r.jpg" alt="Random Name" width="255" height="255">
-    </div>
-    <div class="col-sm-4">
-      <p><strong>BANK</strong></p><br>
-      <a href="https://www.facebook.com/ChayanSuratruangchai"><img src="b.jpg" alt="Random Name" width="255" height="255">
-    </div>
-    <div class="col-sm-4">
-      <br>
-      <br>
-      <p><strong>JOE</strong></p><br>
-      <a href="https://www.facebook.com/sketch.book.101505"><img src="j.jpg" alt="Random Name" width="255" height="255"> 
-    </div>
-  <div class="col-sm-4">
-      <br>
-      <br>
-      <p><strong>TOEY</strong></p><br>
-      <a href="https://www.facebook.com/profile.php?id=100002652322176"><img src="t.jpg" alt="Random Name" width="255" height="255"> 
-    </div>
-      </div>
-  </div>
-</div>
+      <head>
+        <!-- Theme Made By www.w3schools.com - No Copyright -->
+        <title>Bootstrap Theme The Band</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+          .container {
+            padding: 40px 80px;
+          }
+        </style>
+      </head>
 
-</body>
-</html>
+      <body>
 
-</div>
-<div id="section4" class="container-fluid">
-  <html><head>
-  
-</head>
+        <div class="container text-center">
+          <h3>THE GANG</h3>
+          <br>
+          <p><em>I love my friends!</em></p>
+          <br>
+          <div class="row">
+            <div class="col-sm-4">
+              <p><strong>GAME</strong></p><br>
+              <a href="https://www.facebook.com/somkid.23071996?fref=ufi"><img src="g.jpg" alt="GAME" width="255" height="255"></a>
+            </div>
+            <div class="col-sm-4">
+              <p><strong>RUTT</strong></p><br>
+              <a href="https://www.facebook.com/rutthapon.lertprasertwet?fref=ufi"><img src="r.jpg" alt="Random Name" width="255" height="255"></a>
+            </div>
+            <div class="col-sm-4">
+              <p><strong>BANK</strong></p><br>
+              <a href="https://www.facebook.com/ChayanSuratruangchai"><img src="b.jpg" alt="Random Name" width="255" height="255"></a>
+            </div>
+            <div class="col-sm-4">
+              <br>
+              <br>
+              <p><strong>JOE</strong></p><br>
+              <a href="https://www.facebook.com/sketch.book.101505"><img src="j.jpg" alt="Random Name" width="255" height="255"></a>
+            </div>
+            <div class="col-sm-4">
+              <br>
+              <br>
+              <p><strong>TOEY</strong></p><br>
+              <a href="https://www.facebook.com/profile.php?id=100002652322176"><img src="t.jpg" alt="Random Name" width="255" height="255"></a>
+            </div>
+          </div>
+        </div>
+    </div>
 
-<body>
-    
+    </body>
 
-<center>
-    <h1><a href="file:///C:/Users/MTN/Desktop/lab02/gallery.html">My Gallery</h1>
+    </html>
+
+    </div>
+    <div id="section4" class="container-fluid">
+      <html>
+
+      <head>
+      </head>
+
+      <body>
+        <center>
+          <h1><a href="file:///C:/Users/MTN/Desktop/lab02/gallery.html"><font color="white">My Gallery</h1>
 </center>
 <div class="container" style="float:left">
 <img src="sea.jpg" class="image" style="width:100%">
@@ -240,17 +273,10 @@ Bootstrap ได้ใช้หลักการซอยย่อยหน้�
 <div class="middle" style="float:left">
 </div>
 </div>
-
-
 </body></html>
 </div>
-
-
-
-
 <footer class="container-fluid">
   <p>Footer Text</p>
 </footer>
-
 </body>
 </html>
